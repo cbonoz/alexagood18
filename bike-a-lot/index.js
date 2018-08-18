@@ -61,10 +61,13 @@ const RideStatIntent = {
             && request.intent.name === 'RideReportIntent';
     },
     handle(handlerInput) {
-        // TODO: allow the user to report a ride and save it to the record
+        // TODO: allow the user to query their biking statistics.
+
+        const bikingStats = ""
 
         return handlerInput.responseBuilder
-            .speak('You don\'t want to start your career? Have fun wasting away on the couch.')
+            .speak(`Here are your biking stats: ${bikingStats}`)
+            .reprompt(WELCOME_PROMPT)
             .getResponse();
     },
 };
@@ -77,10 +80,14 @@ const RideReportIntent = {
             && request.intent.name === 'RideReportIntent';
     },
     handle(handlerInput) {
-        // TODO: allow the user to report a ride and save it to the record
+        // TODO: allow the user to report a ride and save it to the record -
+        // update entry in the dynamo table.
+
+        const bikeReportMessage = ""
 
         return handlerInput.responseBuilder
-            .speak('You don\'t want to start your career? Have fun wasting away on the couch.')
+            .speak(bikeReportMessage)
+            .reprompt(WELCOME_PROMPT)
             .getResponse();
     },
 };
