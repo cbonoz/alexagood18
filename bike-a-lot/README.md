@@ -13,6 +13,12 @@ Going after challenges:
 * Best Natural Resource Efficiency Skill (tracking and encouraging community biking).
 * Best Use of Open-sourced Data (using open source biking facts to help users find reasons for biking).
 
+### Usage
+You can ask the bike-a-lot alexa skill to do the following actions.
+
+* <b>Give a biking fact</b>: Alexa, ask bike-a-lot for a biking fact.
+* <b>Track a ride</b>: Alexa, ask bike-a-lot to track my ride of 20 miles.
+* <b>Give a ride summary report</b>: Alexa, ask bike-a-lot for my biking report.
 
 ### Useful links
 * http://www.ilovebicycling.com/biking-facts/
