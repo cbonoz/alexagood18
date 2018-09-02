@@ -1,0 +1,97 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "city biking",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BikeFactIntent",
+                    "samples": [
+                        "tell me a fact",
+                        "tell me a biking fact",
+                        "give me a fact",
+                        "give me a biking fact"
+                    ]
+                },
+                {
+                    "name": "CityBikeIntent",
+                    "samples": [
+                        "city bikes in {CityName}, {StateName}",
+                        "city bikes in {CityName}",
+                        "city bikes in {StateName}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "StateName",
+                            "type": "AMAZON.US_STATE",
+                            "samples": []
+                        },
+                        {
+                            "name": "CityName",
+                            "type": "AMAZON.US_CITY",
+                            "samples": []
+                        }
+                    ]
+                },
+                {
+                    "name": "StationIntent",
+                    "samples": [
+                        "{StreetName}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "StreetName",
+                            "type": "STREET",
+                            "samples": [
+                                "Olive & 5th",
+                                "737 W 28th St",
+                                "1222 Abbot Kinney Blvd"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "types": [
+            {
+                "name": "STREET",
+                "values": [
+                    {
+                        "name": {
+                            "value": "Olive & 5th"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "737 W 28th St"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "1222 Abbot Kinney Blvd"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
