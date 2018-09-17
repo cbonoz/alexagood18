@@ -1,97 +1,122 @@
 {
-    "interactionModel": {
-        "languageModel": {
-            "invocationName": "city biking",
-            "intents": [
-                {
-                    "name": "AMAZON.CancelIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.HelpIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.PauseIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.StartOverIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.StopIntent",
-                    "samples": []
-                },
-                {
-                    "name": "BikeFactIntent",
-                    "samples": [
-                        "tell me a fact",
-                        "tell me a biking fact",
-                        "give me a fact",
-                        "give me a biking fact"
-                    ]
-                },
-                {
-                    "name": "CityBikeIntent",
-                    "samples": [
-                        "city bikes in {CityName}, {StateName}",
-                        "city bikes in {CityName}",
-                        "city bikes in {StateName}"
-                    ],
-                    "slots": [
-                        {
-                            "name": "StateName",
-                            "type": "AMAZON.US_STATE",
-                            "samples": []
-                        },
-                        {
-                            "name": "CityName",
-                            "type": "AMAZON.US_CITY",
-                            "samples": []
-                        }
-                    ]
-                },
-                {
-                    "name": "StationIntent",
-                    "samples": [
-                        "{StreetName}"
-                    ],
-                    "slots": [
-                        {
-                            "name": "StreetName",
-                            "type": "STREET",
-                            "samples": [
-                                "Olive & 5th",
-                                "737 W 28th St",
-                                "1222 Abbot Kinney Blvd"
-                            ]
-                        }
-                    ]
-                }
-            ]
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "city biking",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
         },
-        "types": [
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "BikeFactIntent",
+          "slots": [],
+          "samples": [
+            "for a fact",
+            "for a biking fact",
+            "tell me a fact",
+            "tell me a biking fact",
+            "give me a fact",
+            "give me a biking fact"
+          ]
+        },
+        {
+          "name": "CityBikeIntent",
+          "slots": [
             {
-                "name": "STREET",
-                "values": [
-                    {
-                        "name": {
-                            "value": "Olive & 5th"
-                        }
-                    },
-                    {
-                        "name": {
-                            "value": "737 W 28th St"
-                        }
-                    },
-                    {
-                        "name": {
-                            "value": "1222 Abbot Kinney Blvd"
-                        }
-                    }
-                ]
+              "name": "StateName",
+              "type": "AMAZON.US_STATE"
+            },
+            {
+              "name": "CityName",
+              "type": "AMAZON.US_CITY"
             }
-        ]
+          ],
+          "samples": [
+            "city bikes in {CityName} {StateName}",
+            "city bikes in {CityName}",
+            "bikes in {CityName} {StateName}",
+            "bikes in {CityName}"
+          ]
+        },
+        {
+          "name": "StationIntent",
+          "slots": [
+            {
+              "name": "StreetName",
+              "type": "STREET"
+            }
+          ],
+          "samples": ["{StreetName}"]
+        }
+      ],
+      "types": [
+        {
+          "name": "STREET",
+          "values": [
+            {
+              "name": {
+                "value": "Cleeveland Circle"
+              }
+            },
+            {
+              "name": {
+                "value": "Street"
+              }
+            },
+            {
+              "name": {
+                "value": "Olive & fifth"
+              }
+            },
+            {
+              "name": {
+                "value": "seven hundred thirty seventh west twenty eighth St"
+              }
+            },
+            {
+              "name": {
+                "value": "one thousand two hundred twenty second Abbot Kinney Blvd"
+              }
+            },
+            {
+              "name": {
+                "value": "avenue"
+              }
+            },
+            {
+              "name": {
+                "value": "chicken"
+              }
+            },
+            {
+              "name": {
+                "value": "seventy fifth avenue"
+              }
+            },
+            {
+              "name": {
+                "value": "polk st"
+              }
+            }
+          ]
+        }
+      ]
     }
+  }
 }
